@@ -8,7 +8,7 @@
   padding: 1rem 2rem;
 }
 
-.app_navbar-logo {
+.app__navbar-logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -32,7 +32,7 @@
 }
 
 .app__navbar-links li:hover {
-  color: var(--color-grey);
+  color: var(--color-gray);
 }
 
 .app__navbar-login {
@@ -61,7 +61,7 @@
   display: none;
 }
 
-.app__navbar-smallscren_overlay {
+.app__navbar-smallscreen_overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -74,7 +74,7 @@
   z-index: 5;
 }
 
-.app_navbar-smallscren_overlay .overlay__close {
+.app_navbar-smallscreen_overlay .overlay__close {
   font-size: 27px;
   color: var(--color-golden);
   cursor: pointer;
@@ -84,12 +84,25 @@
   right: 20px;
 }
 
+.app__navbar-smallscreen_links {
+  list-style: none;
+}
+
+.app__navbar-smallscreen_links li {
+  margin: 2rem;
+  cursor: pointer;
+  color: var(--color-golden);
+  font-size: 2rem;
+  text-align: center;
+  font-family: var(--font-base);;
+}
+
 @media screen and (max-width: 1150px) {
-  .app__navbar-links{
-      display: none;
+  .app__navbar-links {
+    display: none;
   }
 
-  .app__navbar-smallscreen{
-      display: flex;
+  .app__navbar-smallscreen {
+    display: flex;
   }
 }
